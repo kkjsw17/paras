@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paras"
+authors = [
+    {name = "Kijun Kwon", email = "kkjsw17@naver.com"},
+]
+description = "Paras, the efficient library for splitting long sentences into paragraphs with ease."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Korean",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "sentence-transformers>=2.2.2",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/kkjsw17/paras.git"
+Documentation = "https://github.com/kkjsw17/paras.git"
+
+[tool.hatch.version]
+path = "paras/__init__.py"
+
+[tool.isort]
+profile = "black"
